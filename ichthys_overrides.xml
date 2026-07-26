@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IchthysOS: replace the AOSP repos we modified (and add the manually-added ones)
+     with kusti420 forks at branch ichthysos-a52sxq. Layered on top of the AOSP
+     platform/manifest (android-17.0.0_r1). The "gh" remote is defined in a52sxq.xml. -->
+<manifest>
+  <!-- Modified AOSP repos: drop upstream, use our fork -->
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="kusti420/android_frameworks_base" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="kusti420/android_packages_apps_Settings" remote="gh" revision="ichthysos-a52sxq" sync-s="true" />
+
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="kusti420/android_packages_apps_Launcher3" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="kusti420/android_packages_apps_Dialer" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/build" />
+  <project path="build/make" name="kusti420/android_build" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/build/release" />
+  <project path="build/release" name="kusti420/android_build_release" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="kusti420/android_system_core" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="device/google/cuttlefish" />
+  <project path="device/google/cuttlefish" name="kusti420/android_device_google_cuttlefish" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="kusti420/android_hardware_qcom_wlan" remote="gh" revision="ichthysos-a52sxq" />
+
+  <!-- Manually-added weather provider (not present in the AOSP manifest) -->
+  <project path="packages/apps/OmniJaws" name="kusti420/android_packages_apps_OmniJaws" remote="gh" revision="ichthysos-a52sxq" />
+</manifest>

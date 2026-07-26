@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="gh" fetch="https://github.com" />
+
+  <!-- Device trees (A17) - IchthysOS forks -->
+  <project path="device/samsung/a52sxq" name="kusti420/android_device_samsung_a52sxq" remote="gh" revision="ichthysos-a52sxq" />
+  <project path="device/samsung/sm7325-common" name="kusti420/android_device_samsung_sm7325_common" remote="gh" revision="ichthysos-a52sxq" />
+
+  <!-- Proprietary vendor blobs (16.2 - firmware level, version tolerant) -->
+  <project path="vendor/samsung/a52sxq" name="Galaxy-A52s-5G-AOSP/android_vendor_samsung_a52sxq" remote="gh" revision="16.2" />
+  <project path="vendor/samsung/sm7325-common" name="Galaxy-A52s-5G-AOSP/android_vendor_samsung_sm7325-common" remote="gh" revision="16.2" />
+
+  <!-- Kernel -->
+  <project path="kernel/samsung/sm7325" name="Galaxy-A52s-5G-AOSP/android_kernel_samsung_sm7325" remote="gh" revision="16.2" />
+
+  <!-- Hardware (A17 = lineage-24.0) -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/samsung_slsi/nfc" name="LineageOS/android_hardware_samsung_slsi_nfc" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/samsung-ext/interfaces" name="Galaxy-A52s-5G-AOSP/hardware_samsung-extra_interfaces" remote="gh" revision="16.0" />
+
+  <!-- LineageOS hardware deps referenced by sm7325-common (A17 = lineage-24.0) -->
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="gh" revision="lineage-24.0" />
+
+  <!-- Lineage device sepolicy snippets referenced by sm7325-common BoardConfig -->
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" remote="gh" revision="lineage-24.0" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" remote="gh" revision="lineage-24.0-legacy-um" />
+  <!-- Lineage build framework only (soong plugins: mkdir/generator/lineageVarsPlugin; core make includes). Product config NOT inherited. -->
+  <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" remote="gh" revision="lineage-24.0" />
+  <!-- QCOM/Pixel hardware namespaces imported by sm7325-common/samsung/lineage trees (lahaina=sm8350) -->
+  <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" remote="gh" revision="lineage-24.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/display" name="LineageOS/android_hardware_qcom_display" remote="gh" revision="lineage-24.0-caf-sm8350" />
+  <!-- hardware/qcom-caf/wlan: IchthysOS fork (nl80211 driver cmd tweak) -->
+  <project path="hardware/qcom-caf/wlan" name="kusti420/android_hardware_qcom-caf_wlan" remote="gh" revision="ichthysos-a52sxq" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" remote="gh" revision="lineage-24.0" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="gh" revision="lineage-23.2" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" remote="gh" revision="lineage-24.0" />
+  <project path="external/json-c" name="LineageOS/android_external_json-c" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="LineageOS/android_vendor_qcom_opensource_core-utils-sys" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/libvmmem" name="LineageOS/android_vendor_qcom_opensource_libvmmem" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" remote="gh" revision="lineage-24.0-caf" />
+  <project path="hardware/qcom-caf/thermal-legacy-um" name="LineageOS/android_hardware_qcom_thermal" remote="gh" revision="lineage-24.0-legacy-um" />
+  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="gh" revision="lineage-24.0" />
+  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" remote="gh" revision="lineage-24.0-legacy-um" />
+</manifest>
