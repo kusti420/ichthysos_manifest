@@ -10,8 +10,8 @@
   <project path="vendor/samsung/a52sxq" name="Galaxy-A52s-5G-AOSP/android_vendor_samsung_a52sxq" remote="gh" revision="16.2" />
   <project path="vendor/samsung/sm7325-common" name="Galaxy-A52s-5G-AOSP/android_vendor_samsung_sm7325-common" remote="gh" revision="16.2" />
 
-  <!-- Kernel -->
-  <project path="kernel/samsung/sm7325" name="Galaxy-A52s-5G-AOSP/android_kernel_samsung_sm7325" remote="gh" revision="16.2" />
+  <!-- Kernel - IchthysOS fork (source repo not published under Galaxy-A52s-5G-AOSP) -->
+  <project path="kernel/samsung/sm7325" name="kusti420/android_kernel_samsung_sm7325" remote="gh" revision="ichthysos-a52sxq" />
 
   <!-- Hardware (A17 = lineage-24.0) -->
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="gh" revision="lineage-24.0" />

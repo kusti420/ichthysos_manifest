@@ -17,7 +17,7 @@ mkdir ichthysos && cd ichthysos
 repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1 --git-lfs
 
 # 2. Overlay the IchthysOS local manifests
-git clone https://github.com/kusti420/android .repo/local_manifests
+git clone https://github.com/kusti420/ichthysos_manifest .repo/local_manifests
 
 # 3. Sync
 repo sync -c -j$(nproc --all)
