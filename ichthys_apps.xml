@@ -9,5 +9,5 @@
   <project path="packages/apps/Aperture"  name="LineageOS/android_packages_apps_Aperture"  remote="gh" revision="lineage-23.2" />
   <project path="packages/apps/Recorder"  name="LineageOS/android_packages_apps_Recorder"  remote="gh" revision="lineage-23.2" />
   <project path="packages/apps/Glimpse"   name="LineageOS/android_packages_apps_Glimpse"   remote="gh" revision="lineage-23.2" />
-  <project path="packages/apps/Eleven"    name="LineageOS/android_packages_apps_Eleven"    remote="gh" revision="lineage-22.0" />
+  <project path="packages/apps/Eleven"    name="kusti420/android_packages_apps_Eleven"     remote="gh" revision="ichthysos-a52sxq" />
 </manifest>

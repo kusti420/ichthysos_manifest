@@ -14,7 +14,7 @@
   <project path="kernel/samsung/sm7325" name="kusti420/android_kernel_samsung_sm7325" remote="gh" revision="ichthysos-a52sxq" />
 
   <!-- Hardware (A17 = lineage-24.0) -->
-  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="gh" revision="lineage-24.0" />
+  <project path="hardware/samsung" name="kusti420/android_hardware_samsung" remote="gh" revision="ichthysos-a52sxq" />
   <project path="hardware/samsung_slsi/nfc" name="LineageOS/android_hardware_samsung_slsi_nfc" remote="gh" revision="lineage-24.0" />
   <project path="hardware/samsung-ext/interfaces" name="Galaxy-A52s-5G-AOSP/hardware_samsung-extra_interfaces" remote="gh" revision="16.0" />
 
@@ -27,7 +27,7 @@
   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" remote="gh" revision="lineage-24.0" />
   <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" remote="gh" revision="lineage-24.0-legacy-um" />
   <!-- Lineage build framework only (soong plugins: mkdir/generator/lineageVarsPlugin; core make includes). Product config NOT inherited. -->
-  <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" remote="gh" revision="lineage-24.0" />
+  <project path="vendor/lineage" name="kusti420/android_vendor_lineage" remote="gh" revision="ichthysos-a52sxq" />
   <!-- QCOM/Pixel hardware namespaces imported by sm7325-common/samsung/lineage trees (lahaina=sm8350) -->
   <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" remote="gh" revision="lineage-24.0" />
   <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" remote="gh" revision="lineage-24.0-caf-sm8350" />

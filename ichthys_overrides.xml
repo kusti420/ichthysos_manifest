@@ -33,4 +33,11 @@
 
   <!-- Manually-added weather provider (not present in the AOSP manifest) -->
   <project path="packages/apps/OmniJaws" name="kusti420/android_packages_apps_OmniJaws" remote="gh" revision="ichthysos-a52sxq" />
+  <!-- Mainline modules patched for the SDK-36 platform (min_sdk_version 37 -> 36).
+       Without these the device crash-loops in SystemServiceRegistry. -->
+  <remove-project name="platform/packages/modules/Profiling" />
+  <project path="packages/modules/Profiling" name="kusti420/android_packages_modules_Profiling" remote="gh" revision="ichthysos-a52sxq" />
+
+  <remove-project name="platform/packages/modules/Telephony" />
+  <project path="packages/modules/Telephony" name="kusti420/android_packages_modules_Telephony" remote="gh" revision="ichthysos-a52sxq" />
 </manifest>
